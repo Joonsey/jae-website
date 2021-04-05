@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Jae's portfolio</title>
+    <link rel="icon" type="image/png" href="/static/big-brocoli.png"/>
+    <link rel="stylesheet" href="/static/style.css">
+    <script defer type="text/javascript" src="/static/script.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="id">
+            <p class="name">Johannes Rønning</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div onmouseover='onMouseoverTrigger(this)' onmouseleave="resetState(this)"class="items">
+        <img class="item-image" src=/static/boat.jpg> 
+        <div class="item-image-text">
+            <h1>Web Design</h1>
+            <p class="item-image-subtext">I make responsive and dynamic web-sites.</p>
+        </div>
+    
+    </div>
+    <div onmouseover='onMouseoverTrigger(this)' onmouseleave="resetState(this)"class="items">
+        <img class="item-image" src=/static/dice.jpg>
+        <div class="item-image-text">
+            <h1>Data Science</h1>
+            <p class="item-image-subtext">I am able to organize, use, and deploy data 
+                to make a visual representation as well as find linearities and dependancies. </p>
+        </div>
+    
+    </div>
+    <div onmouseover='onMouseoverTrigger(this)' onmouseleave="resetState(this)"class="items">
+        <img class="item-image" src="/static/cupcake.jpg">
+        <div class="item-image-text">
+            <h1>Machine Learning</h1>
+            <p class="item-image-subtext">I am capeable of training an AI to predict the result of new data
+                 trained on any given valid dataset.</p>
+        </div>
+
+    </div>
+    <div onmouseover='onMouseoverTrigger(this)' onmouseleave="resetState(this)"class="items">
+        <img  class="item-image" src="/static/piano.jpg">
+        <div class="item-image-text">
+            <h1>Scripting</h1>
+            <p class="item-image-subtext">Scripting is extremely helpful to speed up repetetive tasks such as:
+                parsing, updating data, fetching data, web-scraping, pushing data or whatever it may be.
+            </p>
+    </div>
+
+    </div>
+</div>
+    <div class="contactIcons">
+        <a href="https://github.com/Joonsey" alt="github" target="_blank"><img src="/static/github.svg"></a>
+        <a href="https://www.twitch.tv/joonsey" alt="twitch" target="_blank"><img src='/static/twitch.svg'></a>
+        <a href="https://discord.com/users/150306246866632704" alt="discord" target="_blank"><img src="/static/discord.svg"></a>
+        <a onclick=copyToClipboard() onmouseover=popUpTextBox() onmouseleave=removeTextBox() alt="e-mail" ><img src="/static/email.svg" alt="Copy E-mail to clipboard!"></a> 
+        
+    </div>
+
+<div class="text-box">
+    <span> Copy E-mail to clipboard! </span>
+</div>
+
+</body>
+</html>
