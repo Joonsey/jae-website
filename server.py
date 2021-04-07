@@ -1,11 +1,19 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, make_response, request
 import os
 
 app = Flask(__name__, static_folder=os.path.abspath('static'))
 
+
 @app.route('/')
 def index():
-    return render_template('index.html')
+    id = 0
+    resp = request.cookies.get('id')
+    site = make_response(render_template('index.html'))
+    if not resp:
+        site.set_cookie('username', byte(id))
+        id = id + 1
+        print('gave you the id: %s' %(id))
+    return site
 
 @app.route('/rev')
 def news():
@@ -21,4 +29,4 @@ def about():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host="0.0.0.0", port=80)
+    app.run(debug=True, port=80)
